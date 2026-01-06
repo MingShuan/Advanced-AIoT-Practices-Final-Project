@@ -45,8 +45,5 @@
     <arg name="rviz_config" default="$(find final_project)/config/sensor.rviz" />
 
     <node pkg="rviz" type="rviz" name="rviz" args="-d $(arg rviz_config)"/>
-    <!-- 可以保存 rviz 配置并后期直接使用-->
-    <!--
-    <node pkg="rviz" type="rviz" name="rviz" args="-d $(final_project)/rviz/gmapping.rviz"/>
-    -->
+    
 </launch>
