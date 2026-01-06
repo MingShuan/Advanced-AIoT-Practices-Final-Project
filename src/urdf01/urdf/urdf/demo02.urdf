@@ -1,0 +1,19 @@
+<robot name="mycar">
+    <link name="base_link">
+        <visual>
+
+            <geometry>
+                <!-- <box size="0.4 0.6 0.8"/> -->
+                <!-- <sphere radius="0.5"/> -->
+                <!-- <cylinder radius="0.1" length="5"/> -->
+                <mesh filename="package://urdf01/meshes/autolabor_mini.stl"/>    
+            </geometry>
+
+            <origin xyz="0 0 0" rpy="1.57 0 -1.57"/>
+
+            <material name="car_color">
+                <color rgba="1 1.0 0.0 1"/>
+            </material>
+        </visual>
+    </link>
+</robot>

@@ -1,0 +1,12 @@
+<robot name="my_car" xmlns:xacro="http://wiki.ros.org/xacro">
+    
+    <xacro:include filename="$(find final_project_urdf)/urdf/my_head.xacro" />
+    <xacro:include filename="$(find final_project_urdf)/urdf/my_base.xacro" />
+    <xacro:include filename="$(find final_project_urdf)/urdf/my_camera.xacro" />
+    <xacro:include filename="$(find final_project_urdf)/urdf/my_laser.xacro" />
+    <xacro:include filename="$(find final_project_urdf)/urdf/gazebo/my_move.xacro" />
+    <xacro:include filename="$(find final_project_urdf)/urdf/gazebo/my_laser.xacro" />
+    <xacro:include filename="$(find final_project_urdf)/urdf/gazebo/my_camera.xacro" />
+
+
+</robot>

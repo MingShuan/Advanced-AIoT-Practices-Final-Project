@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="joint_state_publisher" name="joint_state_publisher" type="joint_state_publisher" />
+    <node pkg="robot_state_publisher" name="robot_state_publisher" type="robot_state_publisher" />
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find final_project)/map/my_map.yaml"/>    
+    <include file="$(find final_project)/launch/amcl.launch" />
+    <include file="$(find final_project)/launch/move_base.launch" />
+
+    <arg name="rviz_config" default="$(find final_project)/config/sensor.rviz" />
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(arg rviz_config)"/>
+</launch>
